@@ -6,7 +6,6 @@ import requests as req
 from random import choice
 
 from parser.tasks import scrape_faberlic
-from src.schemas import FaberlicLanguages
 
 timeloop = Timeloop()
 logger = timeloop.logger
@@ -24,7 +23,7 @@ def send_prices() -> None:
                "view": "listgoods",
                "idcategory": choice(idcategory_range),
                "Itemid": 2075,
-               "lang": FaberlicLanguages.RU}
+               "lang": "ru"}
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
         "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,",

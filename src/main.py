@@ -4,7 +4,7 @@ from typing import Annotated
 from fastapi import FastAPI, Depends, status
 from sqlalchemy.orm import Session
 
-from src.database import engine, get_session
+from database import engine, get_session
 
 from prices.crud import get_all_prices
 from prices.models import Price

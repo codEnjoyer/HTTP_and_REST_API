@@ -3,7 +3,7 @@ import datetime
 from sqlalchemy import Integer, Float, String, TIMESTAMP
 from sqlalchemy.orm import mapped_column, Mapped
 
-from src.database import Base
+from database import Base
 
 
 class Price(Base):

@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 from .crud import get_all_prices, get_price_by_id, delete_price_by_id, put_price_by_id, patch_price_by_id, create_price
 from .schemas import PriceRead, PriceCreate, PriceUpdate
 
-from src.database import get_session
+from database import get_session
 
 router = APIRouter(tags=["Prices"], prefix="/prices")
 
